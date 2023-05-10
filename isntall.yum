@@ -1,0 +1,10 @@
+---
+- name: 123
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: nano install
+    ansible.builtin.yum:
+      name: nano
+      state: latest
