@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: slave@slave1
   become: true
   tasks:
   - name: add user
