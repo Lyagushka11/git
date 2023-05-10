@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: add user
+    user:
+      password:$6$/JFhNFErRG8pProv$F0CALx9VI5k6ZyrZTHbgaZHj6HbQ9AQ7ubGIWtp7otXUQIidmsqW26ADPb5RKpSbgbI6apX0yb5BKNkb4k3oU0 
+      shell: -bin/bash
+      group: wheel
+      append: yes
